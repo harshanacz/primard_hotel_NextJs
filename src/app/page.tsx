@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>HOME PAGE</h1>
-    </div>
-  )
-}
+    <div style={{ height: '5000px' }}>
 
-export default HomePage
+    </div>
+  );
+};
+
+export default HomePage;
