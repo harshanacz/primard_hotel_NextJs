@@ -44,21 +44,21 @@ const Navbar: React.FC<NavbarProps> = ({ toggleMenu }) => {
               <Link
                 key={index}
                 href={`/${item.label.toLowerCase()}`}
-                className="text-white text-lg hover:text-yellow-400 transition-all duration-300"
+                className="text-white  font-normal  text-lg hover:text-yellow-400 transition-all duration-300"
               >
                 {item.label}
               </Link>
             ))}
           </div>
           {/* Book Now Button */}
-          <button className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full text-lg font-semibold">
+          <button className="bg-yellow-400 text-black px-4 py-2 rounded-full text-lg  font-normal ">
             Book Now
           </button>
         </div>
 
         {/* Menu Button for Mobile View */}
         <div className="flex sm:hidden items-center space-x-4">
-          <button className="bg-yellow-400 text-blue-900 px-3 py-1 rounded-full text-sm font-semibold">
+          <button className="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm  font-normal ">
             Book Now
           </button>
           <HiBars3BottomRight
