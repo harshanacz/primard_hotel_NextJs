@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggleMenu }) => {
       className={`fixed h-[12vh] z-[1000] w-full transition-all duration-300 
         ${
           navBg
-            ? "bg-black bg-opacity-45 backdrop-blur-lg"
+            ? "bg-black bg-opacity-20 backdrop-blur-lg"
             : "bg-transparent backdrop-blur-none"
         }`}
     >

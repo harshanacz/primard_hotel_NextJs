@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="pt-16 pb-64 bg-white">
+    <div className="pt-16 pb-12 bg-white">
       <SectionHeading >Quick Overview</SectionHeading>
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
         {/* Text Content */}
