@@ -1,23 +1,17 @@
-import type { Metadata } from "next";
-import "./globals.css"; 
-import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
+import React, { ReactNode } from 'react';
+import RootLayout from './RootLayout'; // Server component
+import ClientLayout from './ClientLayout'; // Client component
 
-export const metadata: Metadata = {
-  title: "Primard Hotels - CA",
-  description: "Next.js + TypeScript + Tailwind CSS",
-};
+interface LayoutProps {
+  children: ReactNode; 
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function Layout({ children }: LayoutProps) {
   return (
-    <html lang="en">
-      <body className="antialiased">
-        <ResponsiveNavbar/>
+    <RootLayout>
+      <ClientLayout>
         {children}
-      </body>
-    </html>
+      </ClientLayout>
+    </RootLayout>
   );
 }
