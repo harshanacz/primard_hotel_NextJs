@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       {/* Black opacity overlay */}
-      <div className="absolute inset-0 bg-black opacity-70"></div>
+      <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-6">
