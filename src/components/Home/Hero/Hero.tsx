@@ -1,15 +1,11 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import { heroCarouselImage, heroTitle, heroSubtitle } from "@/data/data"; // Updated import
 import { motion, AnimatePresence } from "framer-motion";
 import { CircleChevronRight } from "lucide-react";
 
 const Hero = () => {
-  const [hasStarted, setHasStarted] = useState(false); // Track if carousel has started
 
-  useEffect(() => {
-    setHasStarted(true); // Set to true immediately since there's no transition
-  }, []);
+
 
   return (
     <div className="relative h-screen flex items-center justify-center text-white overflow-hidden">

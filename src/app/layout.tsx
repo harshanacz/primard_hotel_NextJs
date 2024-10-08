@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css"; 
 import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
-import AnimatedCursor from "react-animated-cursor"
 
 export const metadata: Metadata = {
   title: "Primard Hotels - CA",
