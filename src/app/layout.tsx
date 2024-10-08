@@ -1,17 +1,25 @@
-import React, { ReactNode } from 'react';
-import RootLayout from './RootLayout'; // Server component
-import ClientLayout from './ClientLayout'; // Client component
+import type { Metadata } from "next";
+import "./globals.css"; 
+import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
+import AnimatedCursor from "react-animated-cursor"
 
-interface LayoutProps {
-  children: ReactNode; 
-}
+export const metadata: Metadata = {
+  title: "Primard Hotels - CA",
+  description: "Next.js + TypeScript + Tailwind CSS",
+};
 
-export default function Layout({ children }: LayoutProps) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <RootLayout>
-      <ClientLayout>
+    <html lang="en" className="custom-scrollbar">
+      <body className="antialiased">
+        
+        <ResponsiveNavbar/>
         {children}
-      </ClientLayout>
-    </RootLayout>
+      </body>
+    </html>
   );
 }

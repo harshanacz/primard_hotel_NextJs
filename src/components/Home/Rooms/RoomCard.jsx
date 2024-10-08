@@ -4,7 +4,8 @@ import React from 'react';
 const RoomCard = ({ room }) => {
 
   return (
-    <div className="w-full max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-6 cursor-pointer" >
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-center" className="w-full max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden mb-6 cursor-pointer" >
       <img
   src={room.imgUrls[0]}
   alt={room.name}

@@ -35,14 +35,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6">
         {/* Shimmering Heading */}
-        <h1 className="text-6xl font-bold mb-1 shimmer">{heroTitle}</h1> {/* Use the title from data.ts */}
+        <h1 data-aos="fade-up" className="text-6xl font-bold mb-1 shimmer">{heroTitle}</h1> {/* Use the title from data.ts */}
 
         {/* Subheading */}
-        <p className="text-lg mb-4">{heroSubtitle}</p> {/* Use the subtitle from data.ts */}
+        <p data-aos="fade-up" data-aos-delay="200" className="text-lg mb-4">{heroSubtitle}</p> {/* Use the subtitle from data.ts */}
 
         {/* Button */}
         <div className="flex justify-center"> {/* Flex container to center the button */}
-          <button className="flex items-center bg-yellow-400 text-black px-6 py-2 rounded-full text-2xl font-normal hover:bg-yellow-500 transition-transform transform hover:scale-105 duration-300">
+          <button data-aos="fade-up"  data-aos-delay="400" className="flex items-center bg-yellow-400 text-black px-6 py-2 rounded-full text-2xl font-normal hover:bg-yellow-500 transition-transform transform hover:scale-105 duration-300">
             <span>Book Now</span>
             <CircleChevronRight className="ml-2" /> {/* Adjust margin as needed */}
           </button>
